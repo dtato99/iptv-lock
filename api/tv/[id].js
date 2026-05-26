@@ -16,6 +16,19 @@ export default async function handler(req, res) {
 
     const { id } = req.query;
 
+    const userAgent =
+  req.headers["user-agent"] || "";
+
+if (
+  !userAgent
+    .toLowerCase()
+    .includes("sparkle")
+) {
+
+  return res
+    .status(403)
+    .send("Forbidden");
+}
     if (!id) {
       return res
         .status(400)
