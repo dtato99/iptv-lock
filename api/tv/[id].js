@@ -8,7 +8,7 @@ const redis = new Redis({
 const MAX_DEVICES = 3;
 
 const REAL_M3U =
-  "https://drive.google.com/uc?export=download&id=10su1Z--rOXBXguPb6d-bcggsUrFib8fH";
+  "https://drive.google.com/uc?export=download&id=1IL3ayNtVyUj7L5EbLxb7gIveGQXEConw";
 
 export default async function handler(req, res) {
 
